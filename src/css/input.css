@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* npx @tailwindcss/cli -i src/css/input.css -o src/css/output.css --watch */
+
+@theme {
+    --color-primary: #ff3e00;
+    --color-secondary: #ffd9ff;
+    --color-tertiary: #fb339a;
+    --color-accent: #fdff62;
+    --color-dark: #151419;
+    --color-extra: #3a00ff;
+  
+    --font-halvar: 'Halvar', sans-serif;
+    --font-graphik: 'Graphik LCG', sans-serif;
+}
+
+@layer base {
+    * {
+      @apply transition-colors duration-300 ease-linear;
+    }
+  
+    button {
+      @apply cursor-pointer;
+    }
+  
+    .scrollbar-hidden::-webkit-scrollbar {
+      width: 0;
+    }
+}
