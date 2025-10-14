@@ -3,27 +3,42 @@
 /* npx @tailwindcss/cli -i src/css/input.css -o src/css/output.css --watch */
 
 @theme {
-    --color-primary: #ff3e00;
-    --color-secondary: #ffd9ff;
-    --color-tertiary: #fb339a;
-    --color-accent: #fdff62;
-    --color-dark: #151419;
-    --color-extra: #3a00ff;
-  
-    --font-halvar: 'Halvar', sans-serif;
-    --font-graphik: 'Graphik LCG', sans-serif;
+  --color-body: #ebebeb;
+  --color-light: #ffffff;
+  --color-dark: #1a1a1a;
+
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-prosto: 'Prosto One', sans-serif;
 }
 
 @layer base {
-    * {
-      @apply transition-colors duration-300 ease-linear;
-    }
-  
-    button {
-      @apply cursor-pointer;
-    }
-  
-    .scrollbar-hidden::-webkit-scrollbar {
-      width: 0;
-    }
+  * {
+    @apply transition-colors duration-300 ease-linear;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+/* prosto-one-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Prosto One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/prosto-one-v21-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/ubuntu-v21-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
