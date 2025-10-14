@@ -34,7 +34,7 @@
 
   <body class="font-ubuntu bg-body text-dark leading-none">
     <main class="max-w-480 mx-auto">
-      <nav class="py-3 px-5 flex gap-6 justify-between md:py-4 items-center duration-0 js-nav2 lg:bg-body">
+      <nav class="py-3 px-5 flex gap-6 justify-between md:py-5 items-center duration-0 js-nav2 lg:bg-body">
         <div class="flex gap-6 items-center md:relative">
           <img src="/assets/icons/Logo.svg" alt="лого" class="w-32 h-8 md:w-48 md:h-12" />
           <button
@@ -44,7 +44,7 @@
           </button>
           <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 md:hidden js-select-overlay hidden"></div>
           <div
-            class="bg-light text-base pt-10 px-5 md:p-0 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] md:w-57.5 md:h-98 absolute top-5 left-5 md:right-0 md:left-auto md:top-full md:translate-y-0.5 js-select-cnt overflow-hidden hidden">
+            class="bg-light text-base pt-10 px-5 md:p-0 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] md:w-57.5 md:h-98 absolute top-5 left-5 md:right-0 md:left-auto md:top-full md:translate-y-0.5 js-select-cnt overflow-hidden hidden z-50">
             <h2 class="text-[26px] font-prosto leading-[1.2] text-center md:hidden pb-2 text-[#1A1A1A]">
               Выберите<br />город
             </h2>
@@ -191,7 +191,7 @@
           <img src="/assets/icons/Close.svg" alt="закрыть бургер меню" class="hidden size-12 js-nav-close" />
         </button>
         <div
-          class="bg-light text-xl py-10 flex flex-col justify-between items-center w-full h-[calc(100dvh-70px)] absolute top-17.5 -left-full md:top-19.5 md:h-[calc(100dvh-78px)] lg:static lg:flex lg:w-auto lg:h-auto lg:rounded-2xl lg:text-base lg:py-0 lg:flex-row js-nav">
+          class="bg-light text-xl py-10 flex flex-col justify-between items-center w-full h-[calc(100dvh-70px)] absolute top-17.5 -left-full md:top-19.5 md:h-[calc(100dvh-78px)] lg:static lg:flex lg:w-auto lg:h-auto lg:rounded-2xl lg:text-base lg:py-0 lg:flex-row js-nav z-50">
           <div class="flex flex-col items-center justify-center lg:flex-row">
             <a href="#курсы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Курсы</a>
             <a href="#города" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Города</a>
@@ -218,7 +218,7 @@
         </div>
       </nav>
 
-      <header class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative">
+      <header class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative md:p-5 md:pt-0 md:gap-5">
         <div class="bg-light p-5 rounded-[40px] md:p-20">
           <h1
             class="text-[#1A1A1A] font-prosto text-[26px] leading-[1.2] text-center bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text md:text-[44px] lg:text-left mb-6 md:mb-12">
@@ -324,7 +324,7 @@
           </form>
         </div>
         <div
-          class="bg-light px-5 py-10 rounded-[40px] md:p-20 lg:absolute lg:bottom-2.5 lg:left-2.5 flex flex-col gap-4 md:grid md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)]">
+          class="bg-light px-5 py-10 rounded-[40px] md:p-20 lg:absolute lg:bottom-2.5 lg:left-2.5 flex flex-col gap-4 md:grid md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)] lg:pt-0">
           <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
             <div
               class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
@@ -439,6 +439,46 @@
         </div>
       </header>
 
+      <div class="bg-light px-5 py-10 rounded-[40px] mx-2.5 md:mx-5 flex flex-col lg:grid lg:grid-cols-3">
+        <div class="pb-6 lg:pb-0 lg:pr-10 xl:pr-16.5 flex gap-4 items-center">
+          <div
+            class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
+            <img src="/assets/icons/icon-park-outline_speed.svg" alt="decor icon" class="size-10" />
+          </div>
+          <div class="flex flex-col gap-2.5">
+            <h2 class="bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text text-transparent font-prosto text-xl">
+              Персональный менеджер
+            </h2>
+            <p class="text-[#A8A8A8] text-base leading-[1.3]">с профессиональной поддержкой 24/7</p>
+          </div>
+        </div>
+        <div
+          class="py-6 lg:py-0 lg:px-10 xl:px-16.5 flex gap-4 items-center border-y border-y-[#E6E6E6] lg:border-y-0 lg:border-x lg:border-x-[#E6E6E6]">
+          <div
+            class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
+            <img src="/assets/icons/icon-park-outline_speed2.svg" alt="decor icon" class="size-10" />
+          </div>
+          <div class="flex flex-col gap-2.5">
+            <h2 class="bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text text-transparent font-prosto text-xl">
+              Более 50 000 успешных сделок
+            </h2>
+            <p class="text-[#A8A8A8] text-base leading-[1.3]">с c 2017 года</p>
+          </div>
+        </div>
+        <div class="pt-6 lg:pt-0 lg:pl-10 xl:pl-16.5 flex gap-4 items-center">
+          <div
+            class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
+            <img src="/assets/icons/icon-park-outline_speed3.svg" alt="decor icon" class="size-10" />
+          </div>
+          <div class="flex flex-col gap-2.5">
+            <h2 class="bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text text-transparent font-prosto text-xl">
+              63 города
+            </h2>
+            <p class="text-[#A8A8A8] text-base leading-[1.3]">в России и за ее пределами</p>
+          </div>
+        </div>
+      </div>
+
       <footer class="px-5 py-7.5 flex flex-col gap-6 items-center md:gap-4 w-full">
         <div class="flex flex-col gap-6 items-center md:flex-row md:justify-between w-full">
           <img src="/assets/icons/Logo.svg" alt="лого" class="w-48 h-12" />
@@ -472,9 +512,9 @@
           <p class="text-base">@ 2025 USDT Калининград</p>
         </div>
 
-        <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 js-info-overlay hidden"></div>
+        <div class="bg-dark/20 w-dvw h-dvh fixed top-0 left-0 js-info-overlay hidden"></div>
         <div
-          class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 absolute top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
+          class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 fixed top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
           <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2 text-[#1A1A1A]">
             Политика<br />конфиденциальности
           </h2>
@@ -487,9 +527,9 @@
           </div>
         </div>
 
-        <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 js-info-overlay hidden"></div>
+        <div class="bg-dark/20 w-dvw h-dvh fixed top-0 left-0 js-info-overlay hidden"></div>
         <div
-          class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 absolute top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
+          class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 fixed top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
           <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2 text-[#1A1A1A]">
             Пользовательское<br />соглашение
           </h2>
