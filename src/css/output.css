@@ -11,6 +11,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-body: #ebebeb;
     --font-ubuntu: 'Ubuntu', sans-serif;
     --font-prosto: 'Prosto One', sans-serif;
   }
@@ -164,6 +165,9 @@
   }
 }
 @layer utilities {
+  .bg-body {
+    background-color: var(--color-body);
+  }
   .font-prosto {
     font-family: var(--font-prosto);
   }
