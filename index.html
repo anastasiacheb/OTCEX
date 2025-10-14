@@ -33,13 +33,118 @@
   </head>
   <body class="font-ubuntu bg-body text-dark leading-none">
     <nav class="py-3 px-5 flex gap-6 justify-between md:py-4 items-center duration-0 js-nav2">
-      <div class="flex gap-6 items-center">
+      <div class="flex gap-6 items-center md:relative">
         <img src="/assets/icons/Logo.svg" alt="лого" class="w-32 h-8 md:w-48 md:h-12" />
         <button
-          class="bg-light text-base py-4 px-5 rounded-2xl flex gap-2.5 w-44 h-12 md:w-57.5 justify-between items-center border border-dark/5">
-          <span>Москва</span>
+          class="bg-light text-base py-4 px-5 rounded-[14px] flex gap-2.5 min-w-44 h-12 w-57.5 justify-between items-center border border-dark/5 hover:bg-[#FAFAFA] js-select-btn">
+          <span class="js-select-text">Москва</span>
           <img src="/assets/icons/Chavron_down.svg" alt="стрелка вниз" class="size-3.5" />
         </button>
+        <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 md:hidden js-select-overlay hidden"></div>
+        <div
+          class="bg-light text-base pt-10 px-5 md:p-0 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] md:w-57.5 md:h-98 absolute top-5 left-5 md:right-0 md:left-auto md:top-full md:translate-y-0.5 js-select-cnt overflow-hidden hidden">
+          <h2 class="text-[26px] font-prosto leading-[1.2] text-center md:hidden pb-2">Выберите<br />город</h2>
+          <button aria-label="закрыть список городов" class="absolute top-5 right-5 md:hidden js-select-close">
+            <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
+          </button>
+          <div
+            class="md:gap-0 items-start text-base overflow-y-scroll h-[calc(100dvh-150px)] md:h-98 -mr-5 md:mr-0 scrollbar">
+            <button class="p-5 w-full text-left js-select-variant md:hover:bg-[#FAFAFA] mb-2 md:mb-0">Москва</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Санкт-Петербург
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Новосибирск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Екатеринбург
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Казань</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Нижний Новгород
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Челябинск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Омск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Самара</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Ростов-на-Дону
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Уфа</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Красноярск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Воронеж</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Пермь</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Волгоград</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Краснодар</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Саратов</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тюмень</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Ижевск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Барнаул</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Ульяновск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тольятти</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Калуга</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Брянск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Рязань</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Липецк</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тверь</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Ставрополь
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Махачкала</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Чебоксары</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Кострома</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Иркутск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Петрозаводск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Сочи</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Находка</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Сургут</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Архангельск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Кемерово</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Набережные Челны
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Смоленск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Астрахань</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тамбов</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Сыктывкар</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Ярославль</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Калининград
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Северодвинск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Пенза</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тверь</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Челябинск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Улан-Удэ</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Сосновый Бор
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Салават</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Норильск</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Оренбург</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Альметьевск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Магнитогорск
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Кострома</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Комсомольск-на-Амуре
+            </button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">Тихвин</button>
+            <button class="p-5 w-full text-left md:hover:bg-[#FAFAFA] js-select-variant mb-2 md:mb-0">
+              Электросталь
+            </button>
+          </div>
+        </div>
       </div>
       <button aria-label="бургер меню" class="lg:hidden js-burger">
         <img src="/assets/icons/Frame_73.svg" alt="бургер меню" class="size-12 js-nav-open" />

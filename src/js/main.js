@@ -19,3 +19,28 @@ burger.addEventListener('click', () => {
     navOpen.classList.add('hidden');
   }
 });
+
+let selectButton = document.querySelector('.js-select-btn');
+let selectContainer = document.querySelector('.js-select-cnt');
+let selectOverlay = document.querySelector('.js-select-overlay');
+let selectClose = document.querySelector('.js-select-close');
+let selectVariants = document.querySelectorAll('.js-select-variant');
+let selectText = document.querySelector('.js-select-text');
+
+selectButton.addEventListener('click', () => {
+  selectContainer.classList.toggle('hidden');
+  selectOverlay.classList.toggle('hidden');
+});
+
+selectClose.addEventListener('click', () => {
+  selectContainer.classList.add('hidden');
+  selectOverlay.classList.add('hidden');
+});
+
+for (let i = 0; i < selectVariants.length; i++) {
+  selectVariants[i].addEventListener('click', () => {
+    selectContainer.classList.add('hidden');
+    selectOverlay.classList.add('hidden');
+    selectText.textContent = selectVariants[i].textContent;
+  });
+}
