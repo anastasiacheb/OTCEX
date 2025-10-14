@@ -45,7 +45,9 @@
           <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 md:hidden js-select-overlay hidden"></div>
           <div
             class="bg-light text-base pt-10 px-5 md:p-0 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] md:w-57.5 md:h-98 absolute top-5 left-5 md:right-0 md:left-auto md:top-full md:translate-y-0.5 js-select-cnt overflow-hidden hidden">
-            <h2 class="text-[26px] font-prosto leading-[1.2] text-center md:hidden pb-2">Выберите<br />город</h2>
+            <h2 class="text-[26px] font-prosto leading-[1.2] text-center md:hidden pb-2 text-[#1A1A1A]">
+              Выберите<br />город
+            </h2>
             <button aria-label="закрыть список городов" class="absolute top-5 right-5 md:hidden js-select-close">
               <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
             </button>
@@ -215,8 +217,227 @@
           </div>
         </div>
       </nav>
-      <p class="font-ubuntu">hello</p>
-      <p class="font-prosto">heeeey</p>
+
+      <header class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative">
+        <div class="bg-light p-5 rounded-[40px] md:p-20">
+          <h1
+            class="text-[#1A1A1A] font-prosto text-[26px] leading-[1.2] text-center bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text md:text-[44px] lg:text-left mb-6 md:mb-12">
+            <span class="bg-clip-text text-transparent">
+              Наличные <br class="lg:hidden" />и безналичные сделки с <br class="lg:hidden" />
+              USDT
+            </span>
+            в приватном офисе в Москве
+          </h1>
+          <a
+            href="https://t.me/otcex_manager"
+            class="bg-[#3D484E] hover:bg-[#546067] text-base text-light flex items-center justify-center h-12 w-65 rounded-sm m-auto lg:m-0">
+            Связаться с менеджером
+          </a>
+        </div>
+        <div
+          class="bg-[url(/assets/images/image21.png)] bg-no-repeat bg-cover rounded-[40px] md:bg-[url(/assets/images/image23.png)] p-5">
+          <form
+            action="#"
+            class="bg-light/10 text-light border border-[#A7B7C2] rounded-[40px] px-5 py-7.5 flex flex-col gap-8 relative max-w-117.5 mx-auto md:my-34.5">
+            <div
+              class="bg-light text-dark font-prosto w-fit p-2.5 rounded-[10px] absolute top-0 -translate-y-1/2 right-12.5">
+              24/7
+            </div>
+            <div class="text-center">
+              <h2 class="text-[32px] font-medium pb-2">Оставьте заявку</h2>
+              <p>Мы свяжемся с вами в течение 10 минут</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="Сумма" class="text-base">Сумма сделки</label>
+              <div class="flex">
+                <div class="h-8">
+                  <input checked type="radio" name="Валюта" value="usdt" id="usdt" class="hidden peer" />
+                  <label
+                    for="usdt"
+                    class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 rounded-l-[5px] cursor-pointer leading-none block"
+                    >USDT</label
+                  >
+                </div>
+                <div class="h-8">
+                  <input type="radio" name="Валюта" value="rub" id="rub" class="hidden peer" />
+                  <label
+                    for="rub"
+                    class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 rounded-r-[5px] cursor-pointer leading-none block"
+                    >RUB</label
+                  >
+                </div>
+              </div>
+              <input
+                type="tel"
+                id="Сумма"
+                name="Сумма"
+                required
+                placeholder="Введите сумму"
+                class="outline-none bg-light/10 text-xl font-prosto p-5 border border-light rounded-[14px] focus:bg-light/15" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="Контакт" class="text-base">Контакт для связи</label>
+              <div class="flex">
+                <div class="h-8">
+                  <input checked type="radio" name="Связь" value="Telegram" id="Telegram" class="hidden peer" />
+                  <label
+                    for="Telegram"
+                    class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 rounded-l-[5px] cursor-pointer leading-none block"
+                    >USDT</label
+                  >
+                </div>
+                <div class="h-8">
+                  <input type="radio" name="Связь" value="WhatsApp" id="WhatsApp" class="hidden peer" />
+                  <label
+                    for="WhatsApp"
+                    class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 cursor-pointer leading-none block"
+                    >WhatsApp</label
+                  >
+                </div>
+                <div class="h-8">
+                  <input type="radio" name="Связь" value="Телефон" id="Телефон" class="hidden peer" />
+                  <label
+                    for="Телефон"
+                    class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 rounded-r-[5px] cursor-pointer leading-none block"
+                    >Телефон</label
+                  >
+                </div>
+              </div>
+              <input
+                type="tel"
+                id="Контакт"
+                name="Контакт"
+                placeholder="@username"
+                required
+                class="outline-none bg-light/10 text-xl font-prosto p-5 border border-light rounded-[14px] focus:bg-light/15" />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-light hover:bg-[#EAEAEA] text-base text-dark flex items-center justify-center h-12 w-47.5 rounded-sm m-auto mb-2">
+                Оставить заявку
+              </button>
+              <p class="text-[#CACACA] text-[13px] text-center">
+                Нажимая "Отправить заявку" вы даете согласие на <br />обработку данных
+              </p>
+            </div>
+          </form>
+        </div>
+        <div
+          class="bg-light px-5 py-10 rounded-[40px] md:p-20 lg:absolute lg:bottom-2.5 lg:left-2.5 flex flex-col gap-4 md:grid md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)]">
+          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+            <div
+              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
+            </div>
+            <div class="p-4 flex flex-col gap-1">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+            </div>
+          </div>
+          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+            <div
+              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
+            </div>
+            <div class="p-4 flex flex-col gap-1">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+            </div>
+          </div>
+          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+            <div
+              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
+            </div>
+            <div class="p-4 flex flex-col gap-1">
+              <div class="flex gap-0.5 items-center">
+                <div class="flex">
+                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                <div class="flex">
+                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                </div>
+              </div>
+              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <footer class="px-5 py-7.5 flex flex-col gap-6 items-center md:gap-4 w-full">
         <div class="flex flex-col gap-6 items-center md:flex-row md:justify-between w-full">
@@ -245,8 +466,8 @@
         </div>
         <div class="flex flex-col gap-6 items-center md:flex-row-reverse md:justify-between w-full">
           <div class="flex flex-col gap-2.5 items-center md:flex-row md:gap-6">
-            <button class="text-[#2D4E63] text-base js-info-btn">Политика конфиденциальности</button>
-            <button class="text-[#2D4E63] text-base js-info-btn">Пользовательское соглашение</button>
+            <button class="text-[#2D4E63] text-base hover:underline js-info-btn">Политика конфиденциальности</button>
+            <button class="text-[#2D4E63] text-base hover:underline js-info-btn">Пользовательское соглашение</button>
           </div>
           <p class="text-base">@ 2025 USDT Калининград</p>
         </div>
@@ -254,7 +475,9 @@
         <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 js-info-overlay hidden"></div>
         <div
           class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 absolute top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
-          <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2">Политика<br />конфиденциальности</h2>
+          <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2 text-[#1A1A1A]">
+            Политика<br />конфиденциальности
+          </h2>
           <button aria-label="закрыть список городов" class="absolute top-5 right-5 js-info-close">
             <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
           </button>
@@ -267,7 +490,9 @@
         <div class="bg-dark/20 w-dvw h-dvh absolute top-0 left-0 js-info-overlay hidden"></div>
         <div
           class="bg-light text-base pt-10 px-5 rounded-[40px] md:rounded-[14px] h-[calc(100dvh-40px)] w-[calc(100dvw-40px)] max-w-300 absolute top-5 left-5 lg:left-1/2 lg:-translate-x-1/2 js-info-cnt overflow-hidden hidden">
-          <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2">Пользовательское<br />соглашение</h2>
+          <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2 text-[#1A1A1A]">
+            Пользовательское<br />соглашение
+          </h2>
           <button aria-label="закрыть список городов" class="absolute top-5 right-5 js-info-close">
             <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
           </button>
