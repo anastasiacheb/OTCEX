@@ -31,7 +31,47 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
-  <body class="font-ubuntu bg-body">
+  <body class="font-ubuntu bg-body text-dark leading-none">
+    <nav class="py-3 px-5 flex gap-6 justify-between md:py-4 items-center duration-0 js-nav2">
+      <div class="flex gap-6 items-center">
+        <img src="/assets/icons/Logo.svg" alt="лого" class="w-32 h-8 md:w-48 md:h-12" />
+        <button
+          class="bg-light text-base py-4 px-5 rounded-2xl flex gap-2.5 w-44 h-12 md:w-57.5 justify-between items-center border border-dark/5">
+          <span>Москва</span>
+          <img src="/assets/icons/Chavron_down.svg" alt="стрелка вниз" class="size-3.5" />
+        </button>
+      </div>
+      <button aria-label="бургер меню" class="lg:hidden js-burger">
+        <img src="/assets/icons/Frame_73.svg" alt="бургер меню" class="size-12 js-nav-open" />
+        <img src="/assets/icons/Close.svg" alt="закрыть бургер меню" class="hidden size-12 js-nav-close" />
+      </button>
+      <div
+        class="bg-light text-xl py-10 flex flex-col justify-between items-center w-full h-[calc(100dvh-70px)] absolute top-17.5 -left-full md:top-19.5 md:h-[calc(100dvh-78px)] lg:static lg:flex lg:w-auto lg:h-auto lg:rounded-2xl lg:text-base lg:py-0 lg:flex-row js-nav">
+        <div class="flex flex-col items-center justify-center lg:flex-row">
+          <a href="#курсы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Курсы</a>
+          <a href="#города" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Города</a>
+          <a href="#вопросы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline"
+            >Часто задаваемые вопросы</a
+          >
+          <a href="#контакты" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Контакты</a>
+        </div>
+        <div class="lg:hidden flex flex-col gap-2.5 items-center">
+          <p class="text-base">Мы в социальных сетях:</p>
+          <div class="flex gap-2.5 items-center">
+            <a
+              href="https://t.me/otcex_hello_bot"
+              class="bg-[#3D484E] size-12 rounded-full flex justify-center items-center hover:bg-[#546067]">
+              <img src="/assets/icons/Social_media.svg" alt="телеграм" class="size-6" />
+            </a>
+            <a
+              href="https://t.me/otcex_manager"
+              class="bg-[#3D484E] size-12 rounded-full flex justify-center items-center hover:bg-[#546067]">
+              <img src="/assets/icons/Social_media.svg" alt="телеграм" class="size-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <p class="font-ubuntu">hello</p>
     <p class="font-prosto">heeeey</p>
     <script src="src/js/main.js"></script>
