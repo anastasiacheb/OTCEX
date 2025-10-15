@@ -215,6 +215,9 @@
   .z-50 {
     z-index: 50;
   }
+  .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
   .m-auto {
     margin: auto;
   }
@@ -370,6 +373,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -994,6 +1000,11 @@
       left: calc(var(--spacing) * 2.5);
     }
   }
+  .lg\:row-span-2 {
+    @media (width >= 64rem) {
+      grid-row: span 2 / span 2;
+    }
+  }
   .lg\:m-0 {
     @media (width >= 64rem) {
       margin: calc(var(--spacing) * 0);
@@ -1035,6 +1046,16 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .lg\:auto-rows-auto {
+    @media (width >= 64rem) {
+      grid-auto-rows: auto;
+    }
+  }
+  .lg\:auto-rows-min {
+    @media (width >= 64rem) {
+      grid-auto-rows: min-content;
+    }
+  }
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1045,14 +1066,51 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .lg\:grid-rows-2 {
+    @media (width >= 64rem) {
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-rows-\[1fr_1fr\] {
+    @media (width >= 64rem) {
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  .lg\:grid-rows-\[auto_auto\] {
+    @media (width >= 64rem) {
+      grid-template-rows: auto auto;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
     }
   }
+  .lg\:gap-y-0 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:self-end {
+    @media (width >= 64rem) {
+      align-self: flex-end;
+    }
+  }
   .lg\:rounded-2xl {
     @media (width >= 64rem) {
       border-radius: var(--radius-2xl);
+    }
+  }
+  .lg\:rounded-t-none {
+    @media (width >= 64rem) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  .lg\:rounded-b-none {
+    @media (width >= 64rem) {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
   .lg\:border-x {

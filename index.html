@@ -218,8 +218,9 @@
         </div>
       </nav>
 
-      <header class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative md:p-5 md:pt-0 md:gap-5">
-        <div class="bg-light p-5 rounded-[40px] md:p-20">
+      <header
+        class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative md:p-5 md:pt-0 md:gap-5 lg:auto-rows-min lg:grid-rows-[auto_auto] lg:gap-y-0">
+        <div class="bg-light p-5 rounded-[40px] md:p-20 lg:rounded-b-none">
           <h1
             class="text-[#1A1A1A] font-prosto text-[26px] leading-[1.2] text-center bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text md:text-[44px] lg:text-left mb-6 md:mb-12">
             <span class="bg-clip-text text-transparent">
@@ -235,7 +236,7 @@
           </a>
         </div>
         <div
-          class="bg-[url(/assets/images/image21.png)] bg-no-repeat bg-cover rounded-[40px] md:bg-[url(/assets/images/image23.png)] p-5">
+          class="bg-[url(/assets/images/image21.png)] bg-no-repeat bg-cover rounded-[40px] md:bg-[url(/assets/images/image23.png)] p-5 lg:row-span-2">
           <form
             action="#"
             class="bg-light/10 text-light border border-[#A7B7C2] rounded-[40px] px-5 py-7.5 flex flex-col gap-8 relative max-w-117.5 mx-auto md:my-34.5">
@@ -324,116 +325,119 @@
           </form>
         </div>
         <div
-          class="bg-light px-5 py-10 rounded-[40px] md:p-20 lg:absolute lg:bottom-2.5 lg:left-2.5 flex flex-col gap-4 md:grid md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)] lg:pt-0">
-          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
-            <div
-              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+          class="bg-light rounded-[40px] lg:bottom-2.5 lg:left-2.5 lg:pt-0 flex flex-col justify-end lg:rounded-t-none">
+          <div
+            class="flex flex-col md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)] md:grid gap-4 md:p-20 lg:self-end px-5 py-10 lg:pt-0">
+            <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+              <div
+                class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
                 </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+                <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
               </div>
-              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
-              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
+              <div class="p-4 flex flex-col gap-1">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+                <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+              </div>
             </div>
-            <div class="p-4 flex flex-col gap-1">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+            <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+              <div
+                class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
                 </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+                <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
               </div>
-              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
-              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+              <div class="p-4 flex flex-col gap-1">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+                <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
+              </div>
             </div>
-          </div>
-          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
-            <div
-              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+            <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
+              <div
+                class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
                 </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
+                <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
               </div>
-              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
-              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
-            </div>
-            <div class="p-4 flex flex-col gap-1">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+              <div class="p-4 flex flex-col gap-1">
+                <div class="flex gap-0.5 items-center">
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
+                    <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
+                  <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
+                  <div class="flex">
+                    <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
+                    <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
+                    <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
+                  </div>
                 </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
+                <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
+                <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
               </div>
-              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
-              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
-            </div>
-          </div>
-          <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
-            <div
-              class="p-4 flex flex-col gap-1 border-r border-r-black/5 md:border-r-0 md:border-b md:border-b-black/5">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
-              </div>
-              <p class="text-base font-prosto leading-[1.2]">≈99,50 ₽</p>
-              <p class="text-[#A8A8A8] text-[13px]">Обновлено: локально</p>
-            </div>
-            <div class="p-4 flex flex-col gap-1">
-              <div class="flex gap-0.5 items-center">
-                <div class="flex">
-                  <img src="/assets/icons/Vector_5.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#EFEFEF] h-5.25 text-[13px] p-2 flex items-center justify-center">RUB</p>
-                  <img src="/assets/icons/Vector_6.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
-                <img src="/assets/icons/Arrows.svg" alt="стрелки" class="size-3.5" />
-                <div class="flex">
-                  <img src="/assets/icons/Vector_4.svg" alt="decor" class="h-5.25 w-auto" />
-                  <p class="bg-[#DBE4E9] h-5.25 text-[13px] p-2 flex items-center justify-center">USDT</p>
-                  <img src="/assets/icons/Vector_3.svg" alt="decor" class="h-5.25 w-auto" />
-                </div>
-              </div>
-              <p class="text-base font-prosto leading-[1.2]">≈0,01005</p>
-              <p class="text-[#A8A8A8] text-[13px]">Комиссии включены</p>
             </div>
           </div>
         </div>
