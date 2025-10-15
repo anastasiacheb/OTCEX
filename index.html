@@ -249,9 +249,15 @@
             Связаться с менеджером
           </a>
         </div>
-        <div
-          fetchpriority="high"
-          class="bg-[url(/assets/images/image21.webp)] bg-no-repeat bg-cover rounded-[40px] md:bg-[url(/assets/images/image23.webp)] p-5 lg:row-span-2">
+        <div class="rounded-[40px] p-5 lg:row-span-2 relative overflow-hidden">
+          <picture class="absolute top-0 left-0 w-full h-full">
+            <source media="(min-width: 768px)" srcset="/assets/images/image23.webp" type="image/webp" />
+            <img
+              fetchpriority="high"
+              src="/assets/images/image21.webp"
+              alt="бекграунд"
+              class="w-full h-full object-cover" />
+          </picture>
           <div class="bg-black/20 w-dvw h-dvh fixed top-0 left-0 z-50 js-modal-cont hidden">
             <div
               class="bg-light p-10 md:p-20 absolute rounded-[40px] top-1/2 left-1/2 -translate-1/2 w-[calc(100dvw-20px)] max-w-100 md:max-w-120">
@@ -1003,11 +1009,6 @@
               class="w-full h-full border-0"
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad284bbff5b8ebbe9d7affc31b3649a3f3530e5f7238b0760b74e14009429322a&amp;source=constructor"
               title="карта"></iframe>
-            <!-- <script
-              type="text/javascript"
-              charset="utf-8"
-              async
-              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad284bbff5b8ebbe9d7affc31b3649a3f3530e5f7238b0760b74e14009429322a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script> -->
           </div>
         </div>
         <div data-aos="fade-up" class="p-5 md:p-20">

@@ -681,6 +681,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -1014,6 +1017,11 @@
   .md\:mb-12 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:flex {
