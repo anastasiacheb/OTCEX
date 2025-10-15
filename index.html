@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,7 @@
       content="OTCEX — платформа для обмена USDT на рубли по выгодному курсу. Быстрые сделки, конфиденциальность и надёжность. Онлайн и офлайн обмен в городах России." />
     <meta name="twitter:image" content="https://example.com/preview.jpg" />
     <link href="src/css/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -193,12 +194,14 @@
         <div
           class="bg-light text-xl py-10 flex flex-col justify-between items-center w-full h-[calc(100dvh-70px)] absolute top-17.5 -left-full md:top-19.5 md:h-[calc(100dvh-78px)] lg:static lg:flex lg:w-auto lg:h-auto lg:rounded-2xl lg:text-base lg:py-0 lg:flex-row js-nav z-50">
           <div class="flex flex-col items-center justify-center lg:flex-row">
-            <a href="#курсы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Курсы</a>
-            <a href="#города" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Города</a>
-            <a href="#вопросы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline"
+            <a href="#курсы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline js-nav-link">Курсы</a>
+            <a href="#города" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline js-nav-link">Города</a>
+            <a href="#вопросы" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline js-nav-link"
               >Часто задаваемые вопросы</a
             >
-            <a href="#контакты" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline">Контакты</a>
+            <a href="#контакты" class="text-center block py-4 lg:px-8 lg:py-4 lg:hover:underline js-nav-link"
+              >Контакты</a
+            >
           </div>
           <div class="lg:hidden flex flex-col gap-2.5 items-center">
             <p class="text-base">Мы в социальных сетях:</p>
@@ -227,6 +230,7 @@
         class="p-2.5 grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:relative md:p-5 md:pt-0 md:gap-5 lg:auto-rows-min lg:grid-rows-[auto_auto] lg:gap-y-0">
         <div class="bg-light p-5 rounded-[40px] md:p-20 lg:rounded-b-none">
           <h1
+            data-aos="fade-up"
             class="text-[#1A1A1A] font-prosto text-[26px] leading-[1.2] text-center bg-linear-to-b from-[#AFCCE2] to-[#1B6DB9] bg-clip-text md:text-[44px] lg:text-left mb-6 md:mb-12">
             <span class="bg-clip-text text-transparent">
               Наличные <br class="lg:hidden" />и безналичные сделки с <br class="lg:hidden" />
@@ -235,6 +239,7 @@
             в приватном офисе в Москве
           </h1>
           <a
+            data-aos="fade-up"
             href="https://t.me/otcex_manager"
             class="bg-[#3D484E] hover:bg-[#546067] text-base text-light flex items-center justify-center h-12 w-65 rounded-sm m-auto lg:m-0">
             Связаться с менеджером
@@ -242,9 +247,29 @@
         </div>
         <div
           class="bg-[url(/assets/images/image21.png)] bg-no-repeat bg-cover rounded-[40px] md:bg-[url(/assets/images/image23.png)] p-5 lg:row-span-2">
+          <div class="bg-black/20 w-dvw h-dvh fixed top-0 left-0 z-50 js-modal-cont hidden">
+            <div
+              class="bg-light p-10 md:p-20 absolute rounded-[40px] top-1/2 left-1/2 -translate-1/2 min-w-100 md:min-w-120">
+              <button aria-label="закрыть политику конфиденциальности" class="absolute top-5 right-5 js-modal-close">
+                <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
+              </button>
+              <h2 class="font-prosto text-[26px] leading-[1.2] pb-2 md:text-[32px] text-center whitespace-nowrap">
+                Спасибо за <br />
+                обращение
+              </h2>
+              <p class="text-[#838383] text-base pb-8 text-center whitespace-nowrap">
+                Наш менеджер свяжется с вами <br />в ближайшее время
+              </p>
+              <button
+                class="bg-[#3D484E] hover:bg-[#546067] text-base text-light flex items-center justify-center h-12 px-8 rounded-sm m-auto js-modal-close">
+                Хорошо
+              </button>
+            </div>
+          </div>
           <form
+            data-aos="fade-up"
             action="#"
-            class="bg-light/10 text-light border border-[#A7B7C2] rounded-[40px] px-5 py-7.5 flex flex-col gap-8 relative max-w-117.5 mx-auto md:my-34.5">
+            class="bg-light/10 text-light border border-[#A7B7C2] rounded-[40px] px-5 py-7.5 flex flex-col gap-8 relative max-w-117.5 mx-auto md:my-34.5 js-modal-form">
             <div
               class="bg-light text-dark font-prosto w-fit p-2.5 rounded-[10px] absolute top-0 -translate-y-1/2 right-12.5">
               24/7
@@ -289,7 +314,7 @@
                   <label
                     for="Telegram"
                     class="peer-checked:bg-light peer-checked:text-dark text-light bg-[#3D484E] text-base px-3 py-2 rounded-l-[5px] cursor-pointer leading-none block"
-                    >USDT</label
+                    >Telegram</label
                   >
                 </div>
                 <div class="h-8">
@@ -320,7 +345,7 @@
             <div>
               <button
                 type="submit"
-                class="bg-light hover:bg-[#EAEAEA] text-base text-dark flex items-center justify-center h-12 w-47.5 rounded-sm m-auto mb-2">
+                class="bg-light hover:bg-[#EAEAEA] text-base text-dark flex items-center justify-center h-12 w-47.5 rounded-sm m-auto mb-2 js-modal-open">
                 Оставить заявку
               </button>
               <p class="text-[#CACACA] text-[13px] text-center">
@@ -329,8 +354,9 @@
             </div>
           </form>
         </div>
-        <div class="bg-light rounded-[40px] lg:pt-0 flex flex-col justify-end lg:rounded-t-none">
+        <div id="курсы" class="bg-light rounded-[40px] lg:pt-0 flex flex-col justify-end lg:rounded-t-none">
           <div
+            data-aos="fade-up"
             class="flex flex-col md:grid-cols-3 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:w-[calc((100dvw-60px)/2)] md:grid gap-4 md:p-20 lg:self-end px-5 py-10 lg:pt-0">
             <div class="border border-black/5 rounded-[20px] grid grid-cols-2 md:flex md:flex-col">
               <div
@@ -449,7 +475,7 @@
 
       <div
         class="bg-light px-5 py-10 rounded-[40px] mx-2.5 md:mx-5 flex flex-col lg:grid lg:grid-cols-3 md:p-20 lg:p-10">
-        <div class="pb-6 lg:pb-0 lg:pr-10 xl:pr-16.5 flex gap-4 items-center">
+        <div data-aos="fade-up" class="pb-6 lg:pb-0 lg:pr-10 xl:pr-16.5 flex gap-4 items-center">
           <div
             class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
             <img src="/assets/icons/icon-park-outline_speed.svg" alt="decor icon" class="size-10" />
@@ -462,6 +488,7 @@
           </div>
         </div>
         <div
+          data-aos="fade-up"
           class="py-6 lg:py-0 lg:px-10 xl:px-16.5 flex gap-4 items-center border-y border-y-[#E6E6E6] lg:border-y-0 lg:border-x lg:border-x-[#E6E6E6]">
           <div
             class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
@@ -474,7 +501,7 @@
             <p class="text-[#A8A8A8] text-base leading-[1.3]">с c 2017 года</p>
           </div>
         </div>
-        <div class="pt-6 lg:pt-0 lg:pl-10 xl:pl-16.5 flex gap-4 items-center">
+        <div data-aos="fade-up" class="pt-6 lg:pt-0 lg:pl-10 xl:pl-16.5 flex gap-4 items-center">
           <div
             class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
             <img src="/assets/icons/icon-park-outline_speed3.svg" alt="decor icon" class="size-10" />
@@ -488,10 +515,10 @@
         </div>
       </div>
 
-      <section class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
-        <h2 class="font-prosto text-[26px] leading-[1.2] pb-2 md:text-[44px]">Города присутствия</h2>
-        <p class="text-[#838383] text-base pb-6 md:pb-12">Мы работаем в крупнейших городах России</p>
-        <div class="max-h-[360px] overflow-hidden relative js-city-cont">
+      <section id="города" class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
+        <h2 data-aos="fade-up" class="font-prosto text-[26px] leading-[1.2] pb-2 md:text-[44px]">Города присутствия</h2>
+        <p data-aos="fade-up" class="text-[#838383] text-base pb-6 md:pb-12">Мы работаем в крупнейших городах России</p>
+        <div data-aos="fade-up" class="max-h-[360px] overflow-hidden relative js-city-cont">
           <div class="bg-gradient-to-t from-light to-transparent h-30 w-full absolute bottom-0 js-city-grad"></div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-250 mx-auto pb-7">
             <div class="flex flex-col gap-3 p-4 items-center max-w-50 mx-auto">
@@ -857,16 +884,17 @@
           </div>
         </div>
         <button
+          data-aos="fade-up"
           class="bg-[#3D484E] hover:bg-[#546067] text-base text-light flex items-center justify-center h-12 w-auto px-9 rounded-sm m-auto mt-6 md:mt-12 js-city-btn">
           Смотреть все города
         </button>
       </section>
 
-      <section class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
-        <h2 class="font-prosto text-[26px] leading-[1.2] md:text-[44px] pb-6 md:pb-12">
+      <section id="вопросы" class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
+        <h2 data-aos="fade-up" class="font-prosto text-[26px] leading-[1.2] md:text-[44px] pb-6 md:pb-12">
           Часто задаваемые <br class="lg:hidden" />вопросы
         </h2>
-        <div class="flex flex-col gap-3.5 max-w-200 mx-auto">
+        <div data-aos="fade-up" class="flex flex-col gap-3.5 max-w-200 mx-auto">
           <div>
             <button
               class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
@@ -961,8 +989,8 @@
         </div>
       </section>
 
-      <section class="bg-light m-2.5 md:m-5 mb-0 rounded-[40px] flex flex-col lg:grid lg:grid-cols-2">
-        <div class="p-2.5 md:p-5">
+      <section id="контакты" class="bg-light m-2.5 md:m-5 mb-0 rounded-[40px] flex flex-col lg:grid lg:grid-cols-2">
+        <div data-aos="fade-up" class="p-2.5 md:p-5">
           <div
             id="map"
             class="rounded-[30px] md:rounded-[20px] w-full bg-amber-400 grayscale overflow-hidden h-50 lg:h-full md:h-100">
@@ -973,7 +1001,7 @@
               src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad284bbff5b8ebbe9d7affc31b3649a3f3530e5f7238b0760b74e14009429322a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
         </div>
-        <div class="p-5 md:p-20">
+        <div data-aos="fade-up" class="p-5 md:p-20">
           <h2 class="font-prosto text-[26px] leading-[1.2] md:text-[44px] text-center lg:text-left pb-7 md:pb-12">
             Контакты офиса
           </h2>
@@ -1063,7 +1091,7 @@
           <h2 class="text-[26px] font-prosto leading-[1.2] text-center pb-2 md:pb-4 text-[#1A1A1A] md:text-4xl">
             Политика<br />конфиденциальности
           </h2>
-          <button aria-label="закрыть список городов" class="absolute top-5 right-5 js-info-close">
+          <button aria-label="закрыть политику конфиденциальности" class="absolute top-5 right-5 js-info-close">
             <img src="/assets/icons/Close.svg" alt="закрыть" class="size-12" />
           </button>
           <div
@@ -1082,7 +1110,7 @@
             </p>
             <p class="text-base md:text-lg mb-5">
               1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется
-              ко всей информации, которую Оператор может получить о посетителях веб-сайта https://mercurypay.ru.
+              ко всей информации, которую Оператор может получить о посетителях веб-сайта https://otcex.ru.
             </p>
             <h2 class="text-lg md:text-xl font-medium">2. Основные понятия, используемые в Политике</h2>
             <p class="text-base md:text-lg mb-5">
@@ -1095,7 +1123,7 @@
             </p>
             <p class="text-base md:text-lg mb-5">
               2.3. Веб-сайт — совокупность графических и информационных материалов, а также программ для ЭВМ и баз
-              данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://mercurypay.ru.
+              данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://otcex.ru.
             </p>
             <p class="text-base md:text-lg mb-5">
               2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных
@@ -1121,7 +1149,7 @@
             </p>
             <p class="text-base md:text-lg mb-5">
               2.8. Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или
-              определяемому Пользователю веб-сайта https://mercurypay.ru.
+              определяемому Пользователю веб-сайта https://otcex.ru.
             </p>
             <p class="text-base md:text-lg mb-5">
               2.9. Персональные данные, разрешенные субъектом персональных данных для распространения — персональные
@@ -1130,9 +1158,7 @@
               порядке, предусмотренном Законом о персональных данных (далее — персональные данные, разрешенные для
               распространения).
             </p>
-            <p class="text-base md:text-lg mb-5">
-              2.10. Пользователь — любой посетитель веб-сайта https://mercurypay.ru.
-            </p>
+            <p class="text-base md:text-lg mb-5">2.10. Пользователь — любой посетитель веб-сайта https://otcex.ru.</p>
             <p class="text-base md:text-lg mb-5">
               2.11. Предоставление персональных данных — действия, направленные на раскрытие персональных данных
               определенному лицу или определенному кругу лиц.
@@ -1384,7 +1410,7 @@
             <h2 class="text-lg md:text-xl font-medium">12. Заключительные положения</h2>
             <p class="text-base md:text-lg mb-5">
               12.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его
-              персональных данных, обратившись к Оператору с помощью электронной почты hello@mercurypay.ru.
+              персональных данных, обратившись к Оператору с помощью электронной почты legal@otcex.ru.
             </p>
             <p class="text-base md:text-lg mb-5">
               12.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором.
@@ -1392,7 +1418,7 @@
             </p>
             <p class="text-base md:text-lg pb-10">
               12.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу
-              https://mercurypay.ru.
+              https://otcex.ru.
             </p>
           </div>
         </div>
@@ -1423,14 +1449,14 @@
               Услуги доступны исключительно посредством платформы OTCEX (в дальнейшем именуемой «Платформа»). Платформа
               представляет собой частично автоматизированную онлайн-систему (далее по тексту — «Сайт»). Взаимодействуя с
               Платформой и пользуясь Услугами, Вы соглашаетесь с тем, что прочитали, поняли и приняли все условия
-              использования MercuryPay.
+              использования OTCEX.
             </p>
             <p class="text-base md:text-lg mb-5">
               OTCEX оставляет за собой право в любой момент изменить условия использования в одностороннем порядке.
               Подобные изменения и поправки вступают в силу после их публикации на Сайте, но не распространяются на
               открытые в текущий момент сделки. Взаимодействие с Платформой и использование Услуг означает Ваше согласие
               с условиями использования, опубликованными на Сайте, на момент входа на Платформу. Если вы не согласны с
-              условиями использования MercuryPay, опубликованными на Сайте, то Вы должны немедленно прекратить работу с
+              условиями использования OTCEX, опубликованными на Сайте, то Вы должны немедленно прекратить работу с
               Платформой и использование Услуг. Продолжение использования Услуг OTCEX после внесения любых изменений в
               настоящие Условия означает Ваше согласие с измененными Условиями.
             </p>
@@ -1443,7 +1469,7 @@
               «Авторизация» - ввод Пользователем на Сайте логина и пароля, указанных им при Регистрации.<br />
               «Личный кабинет» – персональный интерфейс Пользователя в Сервисе.<br />
               «Пользователь» – лицо, зарегистрированное в установленном порядке на Сервисе, имеющее Личный кабинет.<br />
-              «Сайт» - программно-аппаратный комплекс в сети Интернет по адресу: https://mercurypay.ru.<br />
+              «Сайт» - программно-аппаратный комплекс в сети Интернет по адресу: https://otcex.ru.<br />
               «Вознаграждение» - сумма денежных средств, уплачиваемая Пользователем Сервису за услуги, оказываемые по
               Договору.<br />
               «Агентский договор» – заключенная между Пользователем и Исполнителем путем акцепта Пользователем настоящей
@@ -1798,6 +1824,7 @@
       </footer>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
