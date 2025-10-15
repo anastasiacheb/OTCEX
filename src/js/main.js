@@ -58,9 +58,6 @@ let cityButton = document.querySelector('.js-city-btn');
 let expanded = false;
 
 cityButton.addEventListener('click', () => {
-  // cityContent.classList.toggle('max-h-90');
-  // cityContent.classList.toggle('max-h-none');
-  // cityGradient.classList.toggle('hidden');
   if (!expanded) {
     cityContent.style.maxHeight = cityContent.scrollHeight + 'px';
     cityGradient.classList.add('hidden');
@@ -72,6 +69,29 @@ cityButton.addEventListener('click', () => {
   }
   expanded = !expanded;
 });
+
+let accordionButton = document.querySelectorAll('.js-acc-btn');
+let accordionContent = document.querySelectorAll('.js-acc-cont');
+let accordionIcon = document.querySelectorAll('.js-acc-icon');
+
+for (let i = 0; i < accordionButton.length; i++) {
+  accordionButton[i].addEventListener('click', () => {
+    for (let j = 0; j < accordionButton.length; j++) {
+      if (i === j) {
+        if (accordionContent[j].style.maxHeight) {
+          accordionContent[j].style.maxHeight = null;
+          accordionIcon[j].classList.remove('rotate-180');
+        } else {
+          accordionContent[j].style.maxHeight = accordionContent[j].scrollHeight + 'px';
+          accordionIcon[j].classList.add('rotate-180');
+        }
+      } else {
+        accordionContent[j].style.maxHeight = null;
+        accordionIcon[j].classList.remove('rotate-180');
+      }
+    }
+  });
+}
 
 let infoBnt = document.querySelectorAll('.js-info-btn');
 let infoOverlay = document.querySelectorAll('.js-info-overlay');

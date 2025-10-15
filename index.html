@@ -443,7 +443,7 @@
       </header>
 
       <div
-        class="bg-light px-5 py-10 rounded-[40px] mx-2.5 md:mx-5 flex flex-col lg:grid lg:grid-cols-3 md:p-20 lg:px-5 lg:py-10">
+        class="bg-light px-5 py-10 rounded-[40px] mx-2.5 md:mx-5 flex flex-col lg:grid lg:grid-cols-3 md:p-20 lg:p-10">
         <div class="pb-6 lg:pb-0 lg:pr-10 xl:pr-16.5 flex gap-4 items-center">
           <div
             class="bg-[url('/assets/icons/Frame3.svg')] bg-cover rounded-full size-20 flex items-center justify-center flex-none">
@@ -484,7 +484,7 @@
       </div>
 
       <section class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
-        <h2 class="font-prosto text-[26px] leading-[1.2] pb-2 lg:text-[44px]">Города присутствия</h2>
+        <h2 class="font-prosto text-[26px] leading-[1.2] pb-2 md:text-[44px]">Города присутствия</h2>
         <p class="text-[#838383] text-base pb-6 md:pb-12">Мы работаем в крупнейших городах России</p>
         <div class="max-h-[360px] overflow-hidden relative js-city-cont">
           <div class="bg-gradient-to-t from-light to-transparent h-30 w-full absolute bottom-0 js-city-grad"></div>
@@ -855,6 +855,105 @@
           class="bg-[#3D484E] hover:bg-[#546067] text-base text-light flex items-center justify-center h-12 w-auto px-9 rounded-sm m-auto mt-6 md:mt-12 js-city-btn">
           Смотреть все города
         </button>
+      </section>
+
+      <section class="bg-light py-10 px-4 m-2.5 md:m-5 md:p-20 rounded-[40px] text-center">
+        <h2 class="font-prosto text-[26px] leading-[1.2] md:text-[44px] pb-6 md:pb-12">
+          Часто задаваемые <br class="lg:hidden" />вопросы
+        </h2>
+        <div class="flex flex-col gap-3.5 max-w-200 mx-auto">
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Как проходит обмен?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Вы связываетесь с менеджером OTCEX, указываете направление обмена и сумму. После подтверждения условий
+                сделка проходит в течение 15–30 минут.
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Какая минимальная сумма обмена?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Минимальная сумма — от 100 000 рублей (или эквивалент в USDT).
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Можно ли обменять крупную сумму?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Да, мы работаем с любыми объёмами, включая крупные сделки — до 1 000 000 USDT.
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Где проходят сделки?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Доступен как онлайн-обмен, так и личная встреча в офисе в вашем городе.
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Безопасен ли обмен через OTCEX?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Да, все операции проходят с полной конфиденциальностью, фиксируются и контролируются менеджером.
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-5 py-4 border border-black/5 rounded-[14px] flex items-center justify-between gap-2.5 w-full hover:bg-[#FAFAFA] hover:border-[#FAFAFA] js-acc-btn">
+              <p class="text-base">Какие валюты доступны для обмена?</p>
+              <img
+                src="/assets/icons/Chavrondown.svg"
+                alt="стрелка вниз"
+                class="size-3.5 js-acc-icon transition-all ease-linear duration-200" />
+            </button>
+            <div class="max-h-0 overflow-hidden js-acc-cont transition-all ease-linear duration-200">
+              <div class="bg-[#FAFAFA] border-[#FAFAFA] rounded-[14px] border p-5 mt-0.5 text-base text-left">
+                Основное направление — USDT ⇄ RUB, но по запросу возможны другие криптовалюты.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer class="px-5 py-7.5 flex flex-col gap-6 items-center md:gap-4 w-full">
