@@ -25,6 +25,14 @@
       name="twitter:description"
       content="OTCEX — платформа для обмена USDT на рубли по выгодному курсу. Быстрые сделки, конфиденциальность и надёжность. Онлайн и офлайн обмен в городах России." />
     <!-- <meta name="twitter:image" content="https://example.com/preview.jpg" /> -->
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="child-src 'self' *.yandex.com *.yandex.ru; connect-src 'self' *.yandex.com *.yandex.ru; frame-src 'self' *.yandex.com *.yandex.ru" />
+    <!-- frame-src https://calendly.com;
+script-src https://assets.calendly.com;
+style-src 'unsafe-inline'; -->
+
     <link href="src/css/output.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -1009,6 +1017,7 @@
               class="w-full h-full border-0"
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad284bbff5b8ebbe9d7affc31b3649a3f3530e5f7238b0760b74e14009429322a&amp;source=constructor"
               title="карта"></iframe>
+
             <!-- <script
               type="text/javascript"
               charset="utf-8"
