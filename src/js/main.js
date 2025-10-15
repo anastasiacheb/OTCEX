@@ -145,6 +145,25 @@ for (let i = 0; i < accordionButton.length; i++) {
   });
 }
 
+const mapContainer = document.getElementById('map-container');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+      mapContainer.innerHTML = `<iframe
+        class="w-full h-full border-0"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad284bbff5b8ebbe9d7affc31b3649a3f3530e5f7238b0760b74e14009429322a&source=constructor"
+        title="карта"
+        loading="lazy"
+      ></iframe>`;
+      observer.disconnect();
+    }
+  },
+  { threshold: 0.1 }
+);
+
+observer.observe(mapContainer);
+
 let infoBnt = document.querySelectorAll('.js-info-btn');
 let infoOverlay = document.querySelectorAll('.js-info-overlay');
 let infoCnt = document.querySelectorAll('.js-info-cnt');
