@@ -92,7 +92,6 @@ let modalOpen = document.querySelector('.js-modal-open');
 let modalForm = document.querySelector('.js-modal-form');
 
 modalForm.addEventListener('submit', (e) => {
-  e.preventDefault();
   modalContent.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
 });

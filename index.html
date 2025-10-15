@@ -25,14 +25,6 @@
       name="twitter:description"
       content="OTCEX — платформа для обмена USDT на рубли по выгодному курсу. Быстрые сделки, конфиденциальность и надёжность. Онлайн и офлайн обмен в городах России." />
     <!-- <meta name="twitter:image" content="https://example.com/preview.jpg" /> -->
-
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="child-src 'self' *.yandex.com *.yandex.ru; connect-src 'self' *.yandex.com *.yandex.ru; frame-src 'self' *.yandex.com *.yandex.ru" />
-    <!-- frame-src https://calendly.com;
-script-src https://assets.calendly.com;
-style-src 'unsafe-inline'; -->
-
     <link href="src/css/output.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -287,8 +279,11 @@ style-src 'unsafe-inline'; -->
           </div>
           <form
             data-aos="fade-up"
-            action="#"
+            action="https://formsubmit.co/hello@otcex.ru"
+            method="POST"
             class="bg-light/10 text-light border border-[#A7B7C2] rounded-[40px] px-5 py-7.5 flex flex-col gap-8 relative max-w-117.5 mx-auto md:my-34.5 js-modal-form">
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- <input type="hidden" name="_next" value="" /> -->
             <div
               class="bg-light text-dark font-prosto w-fit p-2.5 rounded-[10px] absolute top-0 -translate-y-1/2 right-12.5">
               24/7
