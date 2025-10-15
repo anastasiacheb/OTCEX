@@ -397,6 +397,9 @@
   .max-w-50 {
     max-width: calc(var(--spacing) * 50);
   }
+  .max-w-100 {
+    max-width: calc(var(--spacing) * 100);
+  }
   .max-w-117\.5 {
     max-width: calc(var(--spacing) * 117.5);
   }
@@ -938,6 +941,11 @@
       }
     }
   }
+  .sm\:gap-6 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .md\:relative {
     @media (width >= 48rem) {
       position: relative;
@@ -1061,6 +1069,11 @@
   .md\:w-\[calc\(100dvw-40px\)\] {
     @media (width >= 48rem) {
       width: calc(100dvw - 40px);
+    }
+  }
+  .md\:max-w-120 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 120);
     }
   }
   .md\:min-w-120 {
