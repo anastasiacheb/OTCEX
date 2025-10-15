@@ -928,9 +928,19 @@
       margin: calc(var(--spacing) * 5);
     }
   }
+  .md\:m-14 {
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * 14);
+    }
+  }
   .md\:mx-5 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:mx-14 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 14);
     }
   }
   .md\:my-34\.5 {
@@ -1134,9 +1144,24 @@
       padding-inline: calc(var(--spacing) * 5);
     }
   }
+  .md\:px-10 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:px-14 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 14);
+    }
+  }
   .md\:py-5 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:py-10 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 10);
     }
   }
   .md\:pt-0 {
