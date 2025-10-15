@@ -646,6 +646,9 @@
   .bg-\[url\(\/assets\/images\/image21\.png\)\] {
     background-image: url(/assets/images/image21.png);
   }
+  .bg-\[url\(\/assets\/images\/image21\.webp\)\] {
+    background-image: url(/assets/images/image21.webp);
+  }
   .from-\[\#AFCCE2\] {
     --tw-gradient-from: #AFCCE2;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1177,6 +1180,11 @@
   .md\:bg-\[url\(\/assets\/images\/image23\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(/assets/images/image23.png);
+    }
+  }
+  .md\:bg-\[url\(\/assets\/images\/image23\.webp\)\] {
+    @media (width >= 48rem) {
+      background-image: url(/assets/images/image23.webp);
     }
   }
   .md\:p-0 {
