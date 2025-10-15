@@ -51,6 +51,28 @@ for (let i = 0; i < selectVariants.length; i++) {
   });
 }
 
+let cityContent = document.querySelector('.js-city-cont');
+let cityGradient = document.querySelector('.js-city-grad');
+let cityButton = document.querySelector('.js-city-btn');
+
+let expanded = false;
+
+cityButton.addEventListener('click', () => {
+  // cityContent.classList.toggle('max-h-90');
+  // cityContent.classList.toggle('max-h-none');
+  // cityGradient.classList.toggle('hidden');
+  if (!expanded) {
+    cityContent.style.maxHeight = cityContent.scrollHeight + 'px';
+    cityGradient.classList.add('hidden');
+    cityButton.textContent = 'Скрыть';
+  } else {
+    cityContent.style.maxHeight = '360px';
+    cityGradient.classList.remove('hidden');
+    cityButton.textContent = 'Смотреть все города';
+  }
+  expanded = !expanded;
+});
+
 let infoBnt = document.querySelectorAll('.js-info-btn');
 let infoOverlay = document.querySelectorAll('.js-info-overlay');
 let infoCnt = document.querySelectorAll('.js-info-cnt');
